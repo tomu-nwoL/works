@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/destyle.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap"
+      rel="stylesheet"
+    />
+    <title>portfolio</title>
+  </head>
+
+  <body>
+    <canvas
+      id="tailCanvas"
+      style="position: fixed; top: 0; right: 0; z-index: 0"
+    ></canvas>
+    <div class="body__wraper">
+      <section id="home">
+        <h1 class="headline">
+          <span class="hidden-text"><mark>Create</mark> with</span><br />
+          <span class="hidden-text">Freedom,</span><br />
+          <span class="hidden-text">Live like a <mark>Cat</mark></span>
+        </h1>
+        <ul class="nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </section>
+      <section class="flex" id="works">
+        <h2 class="headline"><span class="hidden-text">Works</span></h2>
+        <div class="product__wrapper grid">
+          <div class="product__item">
+            <a href="/product_01.html">
+              <img src="./img/thum_product_01@2x.png" alt="" />
+              <div class="flex category">
+                <p>#Design</p>
+                <p>#Coding</p>
+              </div>
+              <p>
+                三菱マテリアル株式会社<br />
+                Webカタログ
+              </p>
+            </a>
+          </div>
+
+          <div class="product__item">
+            <a href="/product_02.html">
+              <img src="./img/thum_product_02@2x.png" alt="" />
+              <div class="flex category">
+                <p>#Design</p>
+                <p>#Design</p>
+              </div>
+              <p>
+                伊藤忠ロジスティクス株式会社<br />
+                コーポレートサイト
+              </p>
+            </a>
+          </div>
+
+          <div class="product__item">
+            <a href="/product_03.html">
+              <img src="./img/thum_product_03@2x.png" alt="" />
+              <div class="flex category">
+                <p>#Design</p>
+                <p>#Design</p>
+              </div>
+              <p>
+                株式会社iYell<br />
+                コーポレートサイト
+              </p>
+            </a>
+          </div>
+
+          <div class="product__item">
+            <a href="/product_04.html">
+              <img src="./img/thum_product_04@2x.png" alt="" />
+              <div class="flex category">
+                <p>#Design</p>
+                <p>#Design</p>
+              </div>
+              <p>
+                社会福祉法人えどがわ<br />
+                コーポレートサイト
+              </p>
+            </a>
+          </div>
+
+          <div class="product__item">
+            <a href="/product_05.html">
+              <img src="./img/thum_product_05@2x.png" alt="" />
+              <div class="flex category">
+                <p>#Design</p>
+                <p>#Design</p>
+              </div>
+              <p>
+                株式会社 公文教育研究会<br />
+                学習療法センター<br />
+                ポータルサイト
+              </p>
+            </a>
+          </div>
+
+          <div class="product__item">
+            <a href="/product_06.html">
+              <img src="./img/thum_product_06@2x.png" alt="" />
+              <div class="flex category">
+                <p>#Design</p>
+                <p>#Design</p>
+              </div>
+              <p>
+                Other Works<br />
+              </p>
+            </a>
+          </div>
+
+        </div>
+      </section>
+      <section class="flex" id="about">
+        <h2 class="headline"><span class="hidden-text">About</span></h2>
+        <div>
+          <div class="about__wrapper flex">
+            <img src="./img/profile.png" alt="" />
+            <div class="about__item">
+              <h4>TOMU</h4>
+              <p>
+                Webデザイナーとして活動中。見る人にとってわかりやすく、伝わりやすいデザインを心がけています。コーポレートサイトやLPなど、用途に応じた柔軟な設計が得意です。デザインだけでなく、ちょっとしたコーディングもできます。
+              </p>
+            </div>
+          </div>
+          <div class="skil__wrapper flex">
+            <div class="flex">
+              <p>言語</p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>jQuery</li>
+                <li>PHP</li>
+                <li>SCSS</li>
+              </ul>
+            </div>
+            <div class="flex">
+              <p>ツール</p>
+              <ul>
+                <li>Figma</li>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>XD</li>
+                <li>Visual Studio Code</li>
+                <li>Cursor</li>
+                <li>SourceTree</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="copy">
+      <small>© Tomu’s portfolio</small>
+    </div>
+  </body>
+  <footer>
+    <script src="./js/main.js"></script>
+  </footer>
+</html>
