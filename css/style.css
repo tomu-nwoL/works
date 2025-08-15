@@ -7,29 +7,11 @@ html {
   font-size: 62.5%;
   font-family: "DM Serif Text", serif;
   color: #111;
+  scroll-behavior: smooth;
 }
 body {
   font-size: 1.6rem;
   background-color: #f3f3f3;
-}
-
-a {
-  transition: all 0.25s ease;
-}
-a::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #111;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
-}
-a:hover::after {
-  transform: scaleX(1);
 }
 .flex {
   display: flex;
@@ -380,20 +362,20 @@ section {
 }
 
 /* Zoom In #1 */
-.works_detail a picture {
+ a picture {
   display: block;
   overflow: hidden;
   position: relative;
 }
 
-.works_detail a picture img {
+a picture img {
   width: 100%;
   height: auto;
   transform: scale(1);
   transition: transform 0.3s ease-in-out;
 }
 
-.works_detail a picture:hover img {
+a picture:hover img {
   transform: scale(1.03);
 }
 
@@ -452,19 +434,34 @@ section {
   color: #b30000;
   text-decoration: none;
 }
-.works_detail .content__inner .content__head a::after {
+
+.works_detail .content__wrapper > a::after,
+.works_detail .disabled::after{
+  content: none;
+}
+
+.works_detail a {
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.works_detail a::after {
   content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: #b30000;
+  background-color: #111;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
 }
-.works_detail .content__inner .content__head a:hover::after {
+.works_detail .content__inner .content__head a::after {
+  background-color: #b30000;
+}
+
+.works_detail a:hover::after {
   transform: scaleX(1);
 }
 
