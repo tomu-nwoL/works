@@ -279,7 +279,7 @@ section {
 .copy {
   height: 30vw;
   width: 100%;
-  background-image: url(./img/bg_cat.png);
+  background-image: url(../img/bg_cat.png);
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: bottom;
