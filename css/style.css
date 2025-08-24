@@ -65,6 +65,7 @@ section {
 }
 .body__wraper h5 {
   font-size: 2.8rem;
+  line-height: 1.6;
 }
 .body__wraper p {
   font-family: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", "MS P明朝", serif;
@@ -427,7 +428,8 @@ a picture:hover img {
 .works_detail .content__inner .content__head h4 {
   margin-bottom: 12px;
 }
-.works_detail .content__inner .content__head a {
+.works_detail .content__inner .content__head a,
+.works_detail .content__inner .content__main a {
   position: relative;
   display: inline-block;
   margin-bottom: 32px;
@@ -457,7 +459,8 @@ a picture:hover img {
   transform-origin: left;
   transition: transform 0.3s ease;
 }
-.works_detail .content__inner .content__head a::after {
+.works_detail .content__inner .content__head a::after,
+.works_detail .content__inner .content__main a::after {
   background-color: #b30000;
 }
 
@@ -468,6 +471,10 @@ a picture:hover img {
 .works_detail .content__inner .content__main p {
   margin-bottom: 24px;
   line-height: 2;
+}
+
+.works_detail .content__inner .content__main h5 {
+  margin-bottom: 24px;
 }
 
 .works_detail .content__inner .content__main img {
