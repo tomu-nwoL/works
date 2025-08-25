@@ -36,7 +36,8 @@ section {
   height: 100vh;
 }
 #works,
-#about {
+#about,
+#music{
   justify-content: space-between;
 }
 .body__wraper h1,
@@ -299,14 +300,18 @@ section {
   .nav--visible {
     opacity: 1;
     pointer-events: auto;
+    height: fit-content;
   }
   #works,
-  #about{
+  #about,
+  #music{
     flex-wrap: wrap;
   }
   #works h2,
-  #about h2{
-    margin-bottom: 32px;
+  #about h2,
+  #music h2{
+    margin-bottom: 16px;
+    line-height: 1.3;
   }
   .body__wraper h2 + div {
     margin-left: 0;
@@ -431,14 +436,15 @@ a picture:hover img {
 .works_detail .content__inner .content__head a,
 .works_detail .content__inner .content__main a {
   position: relative;
-  display: inline-block;
+  display: flex;
   margin-bottom: 32px;
   color: #b30000;
   text-decoration: none;
+  width: fit-content;
 }
 
-.works_detail .content__wrapper > a::after,
-.works_detail .disabled::after{
+.works_detail .content__wrapper > a::before,
+.works_detail .disabled::before{
   content: none;
 }
 
@@ -447,7 +453,7 @@ a picture:hover img {
   position: relative;
 }
 
-.works_detail a::after {
+.works_detail a::before {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -459,13 +465,22 @@ a picture:hover img {
   transform-origin: left;
   transition: transform 0.3s ease;
 }
-.works_detail .content__inner .content__head a::after,
-.works_detail .content__inner .content__main a::after {
+.works_detail .content__inner .content__head a::before,
+.works_detail .content__inner .content__main a::before {
   background-color: #b30000;
 }
 
-.works_detail a:hover::after {
+.works_detail a:hover::before {
   transform: scaleX(1);
+}
+
+.works_detail .content__inner .content__head a[target="_blank"]::after,
+.works_detail .content__inner .content__main a[target="_blank"]::after {
+  content: url(../img/arrow-up-right-from-square-solid-full.svg);
+  margin-left: 0.3em;
+  vertical-align: middle;
+  width: 18px;
+  color: #b30000;
 }
 
 .works_detail .content__inner .content__main p {
@@ -539,10 +554,15 @@ a picture:hover img {
     font-size: 3.5rem;
   }
   .body__wraper h4 {
-    font-size: 3.0rem;
+    font-size: 2.3rem;
+    line-height: 1.4;
   }
   .body__wraper h5 {
     font-size: 2rem;
+  }
+  .works_detail .content__inner .content__main p{
+    font-size: 1.4rem;
+    line-height: 1.8;
   }
   .works_detail {
     margin-top: 24px;
@@ -584,5 +604,13 @@ a picture:hover img {
   }
   .works_detail .side_nav.right ul {
     justify-content: center;
+  }
+  .works_detail .content__inner .content__main h5 {
+    margin-bottom: 8px;
+  }
+  .works_detail .content__inner .content__head a,
+  .works_detail .content__inner .content__main a{
+    font-size: 1.3rem;
+    line-height: 1.6;
   }
 }
