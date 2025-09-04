@@ -207,12 +207,13 @@ section {
   font-weight: bold;
 }
 
-.headline span {
+.headline >span {
   position: relative;
   display: inline-block;
   overflow: hidden;
   color: #111;
   transition: color 0.8s;
+  line-height: 1.2;
 }
 
 /* 初期状態で文字を白くして見えなくする */
@@ -286,7 +287,7 @@ section {
   .nav {
     position: fixed;
     top: 3.25vw;
-    left: calc(50% - 135px);
+    left: calc(50% - 175px);
     display: flex;
     opacity: 0;
 
@@ -347,8 +348,11 @@ section {
     background-size: 80%;
   }
   .copy small{
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .pc_only{
+    display: none;
   }
 }
 
